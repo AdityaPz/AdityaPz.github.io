@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+@font-face
+  {
+    font-family: 'neuqe'; 
+    src: url('assets/BebasNeue.ttf');
+}
+ 
+h1{
+    font-family: "neuqe";
+}
+
+body {
+	background: #eee;
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+.jumbotron{
+	font-size:35px;
+    text-align:center;
+    padding:15px;
+    margin: 0;
+    background-color:#44db65;
+    color:white;
+    
+}
+
+.wrap {
+	width: 950px;
+	margin:25px auto;
+}
+
+div.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
+	background: #5dd97e;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+div.menu ul li {
+	margin:0;
+	float:left;
+}
+
+div.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+div.menu ul a:hover {
+	text-decoration: underline;
+	background:#16a085;
+}
+
+.sidebar {
+	float:right;
+	width:275px;
+	margin-top: -73px;
+}
+
+.sidebar .widget {
+	padding:30px;
+	margin:0 0 30px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+
+.sidebar .widget:hover {
+	border-bottom: 2px solid #5dd97e;
+}
+
+.sidebar .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#5dd97e;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+.widget .contact{
+	margin: 0 40px;
+	padding: 15px;
+	text-align: center;
+}
+.widget input{
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+.widget textarea{
+	height: 65px;
+	padding: 10px 0;
+	margin-bottom: 25px;
+}
+.widget input,
+.widget textarea{
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+
+}
+.widget input[type="submit"]{
+	cursor: pointer;
+	background: #5dd97e;
+	color: #fff;
+	margin-bottom: 0;
+
+}
+
+.blog {
+	float:left;
+}
+
+.card {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+
+.card img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+
+.card h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+
+.card p:last-child {
+	margin: 0;
+}
+
+footer{
+	float: left;
+   	padding: 0;
+   	color: white;
+   	width: 100%;
+   	background-color: #5dd97e;
+}	
+.footer{
+    text-align:center;
+}
+
+.pic{
+	display: inline-block;
+	padding: 0;
+	
+}
+
+.pic img{
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-top: -10px;
+	margin-left: 40px ;
+	border-radius: 50% ;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #999;
+	
+}
+.biodata img{
+	width: 20px;
+	margin-top: 2px;
+}
+#toggle{
+	display: none;
+}
+.toggle{
+	display: none;
+} 
+
+
+
+@media screen and (max-width: 960px) {
+	header{
+		position: inherit;
+	}
+
+
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+
+	.sidebar .widget {
+		padding:5%;
+	}
+
+	div.menu ul {
+		width: 100%;
+	}
+
+	div.menu ul {
+		float:inherit;
+	}
+
+	div.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+
+	.menu  {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+		display: none;
+		position: relative;
+		bottom:60px;
+
+	}
+	.menu a{
+		display: block;
+	}
+	#toggle:checked + .menu {
+		display: block;
+	}
+	.toggle{
+		font-size: 35px;
+		text-align: left;
+		margin:10px;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		bottom: 70px;
+		right: -20px;
+		color: white;
+
+	}
+	.jumbotron{
+	    text-align: right;
+	}
+	
+
+	.blog {
+		width:90%;
+	}
+
+	.card {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:5%;  
+		background: #fff;
+		
+	}
+
+	.card img {
+		max-width: 110%;
+		margin:0 0 25px -5%;
+		min-width: 110%;
+	}
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+	div.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+
+	.card {
+		margin:25px auto;
+	}
+
+	.card img {
+		margin:-5% 0 25px -5%;
+	}			
+}
